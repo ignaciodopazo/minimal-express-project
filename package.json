@@ -13,11 +13,11 @@
     "package.json"
   ],
   "scripts": {
-    "start": "ts-node ./src/index.ts",
+    "start": "ts-node ./src/app.ts",
     "build": "tsc",
     "lint": "./node_modules/.bin/eslint . --ext .ts",
     "test": "jest --passWithNoTests --detectOpenHandles --coverage",
-    "prepublish": "rm -rf dist && npm run build"
+    "prepublishOnly": "rm -rf dist && npm run build"
   },
   "devDependencies": {
     "@jest/globals": "^29.3.1",
